@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Page</title>
+    </head>
+    <body>
+       <head>login</head>
+        <form action="#" method="POST">
+
+            <p>username<input type="text" name="username" placeholder="Enter your username"></p>
+            <p>password<input type="password" name="password" placeholder="Enter your password"></p>
+            <input type="submit" value="Login" class="submit"> 
+            <script>
+                const user_name = document.getElementById("username");
+                const password = document.getElementById("password");
+                const submit_button = document.querySelector("submit");
+
+                submit_button.addEventListener("click", (event) => {
+                    console.log("submit button clicked");
+                    event.preventDefault();
+                    console.log(user_name.value);
+                    event.preventDefault();
+                    console.log(password.value);
+                    const user_name_value = user_name.value;
+                    const password_value = password.value;
+                })
+            </script>
+    </body>
+</html>
